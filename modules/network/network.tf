@@ -172,23 +172,3 @@ resource "aws_security_group" "private-sg" {
     Environment = var.environment
   }
 }
-
-###############
-### Route 53
-###############
-
-#resource "aws_route53_zone" "public-zone" {
-#  name = "${var.environment}.cubedsteps.com"
-#  private_zone = false
-#}
-#
-#resource "aws_route53_zone" "private-zone" {
-#  name = "${var.environment}"
-#  vpc_id = 
-#  private_zone = true
-#}
-#
-#resource "aws_route53_zone_association" "vpc-private-zone-association" {
-#  zone_id = 
-#  vpc_id = 
-#}

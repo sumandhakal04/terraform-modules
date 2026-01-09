@@ -2,31 +2,41 @@ variable "environment" {}
 
 variable "global_region" {}
 
-variable "terrform_state_files_bucket" {}
+variable "terraform_state_files_bucket" {}
 
 variable "cidr_block" {}
 
 variable "vpc_name" {}
 
-variable "public_subnet-1" {}
+variable "public_subnet_1" {}
 
-variable "public_subnet-2" {}
+variable "public_subnet_2" {}
 
-variable "private_subnet-1" {}
+variable "private_subnet_1" {}
 
-variable "purivate_subnet-2" {}
+variable "private_subnet_2" {}
 
-variable "vpn_cidr_block" {
-  default = list(string)
-}
+variable "public_server_instance_type" {}
+
+variable "public_instance_name" {}
+
+variable "public_server_key_name" {}
+
+variable "vpn_cidr_block" {}
 
 variable "public_server_ami" {}
 
 variable "private_server_ami" {}
 
-variable "Bucket-1_name" {}
+variable "private_server_instance_type" {}
 
-variable "Bucket-2_name" {}
+variable "private_instance_name" {}
+
+variable "private_server_key_name" {}
+
+variable "Bucket_1_name" {}
+
+variable "Bucket_2_name" {}
 
 
 
